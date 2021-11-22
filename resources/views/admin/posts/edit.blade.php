@@ -30,7 +30,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <form action="/admin/posts/{{$post->id}}" role="form">
+        <form action="/admin/posts/{{$post->id}}" method="POST" role="form">
             @method('PATCH')
             @csrf
             <div class="form-group">
